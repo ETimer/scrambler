@@ -1,0 +1,8 @@
+{
+  "name": "scrambler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:OUDUIDUI/scrambler.git",
+  "author": "oushihao <oushihao97@163.com>",
+  "license": "MIT"
+}
