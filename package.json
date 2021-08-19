@@ -4,14 +4,21 @@
     "main": "/lib/index.ts",
     "browser": "dist/index.js",
     "scripts": {
-        "dev": "rollup -w -c --environment NODE_ENV:development --sourcemap",
-        "build": "rollup -c --environment NODE_ENV:production"
+        "dev": "rollup -w -c --environment NODE_ENV:development",
+        "build": "rollup -c --environment NODE_ENV:production",
+        "test": "nodemon dist/index.js"
+    },
+    "nodemonConfig": {
+        "ignore": [
+            "lib/*"
+        ]
     },
     "repository": "git@github.com:OUDUIDUI/scrambler.git",
     "author": "oushihao <oushihao97@163.com>",
     "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.15.0",
+        "nodemon": "^2.0.12",
         "rollup": "^2.56.2",
         "rollup-plugin-babel": "^4.4.0",
         "rollup-plugin-commonjs": "^10.1.0",
@@ -20,6 +27,7 @@
         "rollup-plugin-node-resolve": "^5.2.0",
         "rollup-plugin-terser": "^7.0.2",
         "rollup-plugin-typescript2": "^0.30.0",
+        "tsc": "^2.0.3",
         "typescript": "^4.3.5"
     }
 }
