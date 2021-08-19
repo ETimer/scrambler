@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "rollup -w -c --environment NODE_ENV:development",
         "build": "rollup -c --environment NODE_ENV:production",
+        "serve": "nodemon dist/index.js",
         "test": "jest __test__/index.spec.js"
     },
     "nodemonConfig": {

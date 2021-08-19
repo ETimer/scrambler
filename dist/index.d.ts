@@ -1,5 +1,5 @@
-declare const _default: {
-    get333Scramble(): string;
-};
+declare class Scrambler {
+    get333Scramble(): String;
+}
 
-export { _default as default };
+export { Scrambler as default };

@@ -5,11 +5,10 @@ import {initUtil, initMoveCubes, fromScramble, initPrunTables, randomCube} from 
 initUtil();
 initMoveCubes();
 
+
+
 export default {
-    // Search,
-    solve(facelet) {
-        return new Search().solution(facelet);
-    },
+    Search,
     randomCube,
     // fromScramble,
     // initFull() {

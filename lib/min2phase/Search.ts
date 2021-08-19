@@ -94,16 +94,16 @@ export default class Search {
         }
     }
 
-    // next(probeMax: number = 1e9, probeMin: number = 0, verbose: number = 0): string {
-    //     this.probe = 0;
-    //     this.probeMax = probeMax;
-    //     this.probeMin = Math.min(probeMin, probeMax);
-    //     this.moveSol = null;
-    //     this.moveSolStr = '';
-    //     this.isRec = true;
-    //     this.verbose = verbose;
-    //     return this.search();
-    // }
+    next(probeMax: number = 1e9, probeMin: number = 0, verbose: number = 0): string {
+        this.probe = 0;
+        this.probeMax = probeMax;
+        this.probeMin = Math.min(probeMin, probeMax);
+        this.moveSol = null;
+        this.moveSolStr = '';
+        this.isRec = true;
+        this.verbose = verbose;
+        return this.search();
+    }
 
     verify(facelets: string): number {
         if (this.cc.fromFacelet(facelets) === -1) {
