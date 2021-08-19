@@ -1,5 +1,7 @@
-const msg:string = 'Hello World';
+import min2phase from "./min2phase/index"
 
-console.log(msg);
-
-export default {msg};
+export default {
+    get333Scramble() {
+        return min2phase.solve(min2phase.randomCube())
+    }
+};
